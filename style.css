@@ -536,11 +536,37 @@ a {
     letter-spacing: 0.02em;
 }
 
+.stat-icon-number {
+    min-width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon-number svg {
+    stroke: var(--gold-primary);
+    width: 36px;
+    height: 36px;
+}
+
+.about-highlight {
+    color: var(--gold-primary);
+    font-weight: 500;
+    font-style: italic;
+    border-left: 2px solid var(--gold-primary);
+    padding-left: 16px;
+    margin-top: 8px;
+}
+
 /* --- Areas Section --- */
 .areas-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+}
+
+.areas-grid.areas-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .area-card {
