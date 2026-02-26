@@ -208,13 +208,13 @@ a {
 }
 
 .logo-img {
-    height: 52px;
+    height: 120px;
     width: auto;
     transition: var(--transition);
 }
 
 .navbar.scrolled .logo-img {
-    height: 40px;
+    height: 64px;
 }
 
 .logo-text {
