@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://auronnegocios.com.br/sitemap.xml
