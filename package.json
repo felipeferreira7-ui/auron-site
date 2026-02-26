@@ -1,0 +1,9 @@
+{
+  "name": "auron-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx -y serve .",
+    "build": "echo 'Static site — no build step needed. Deploy the root directory as-is.'"
+  }
+}
