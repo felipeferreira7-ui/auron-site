@@ -597,9 +597,10 @@ a {
 }
 
 .area-card:hover {
-    border-color: var(--border-hover);
+    border-color: var(--gold-primary);
     background: var(--bg-card-hover);
     transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
 .area-icon {
@@ -758,13 +759,19 @@ a {
 
 .see-more-container {
     text-align: center;
-    margin-top: -16px;
-    margin-bottom: 48px;
+    margin-top: 0;
+    margin-bottom: 64px;
 }
 
-.see-more-container .btn {
-    padding: 14px 40px;
-    font-size: 0.9rem;
+.see-more-container .btn-outline {
+    border-color: var(--border-color);
+    color: var(--text-secondary);
+}
+
+.see-more-container .btn-outline:hover {
+    border-color: var(--gold-primary);
+    color: var(--gold-primary);
+    box-shadow: 0 0 20px rgba(201, 168, 76, 0.1);
 }
 
 .deal-card {
