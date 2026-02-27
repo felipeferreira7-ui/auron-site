@@ -749,7 +749,11 @@ a {
 }
 
 .hidden-deal {
-    display: none !important;
+    display: none;
+}
+
+.hidden-deal.show {
+    display: block !important;
 }
 
 .see-more-container {
