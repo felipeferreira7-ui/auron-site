@@ -17,6 +17,11 @@ function initDealsToggle() {
 
     if (!btn || hiddenDeals.length === 0) return;
 
+    // Language detection
+    const isEnglish = document.documentElement.lang.startsWith('en');
+    const textShow = isEnglish ? 'View all deals' : 'Ver todos os negócios';
+    const textHide = isEnglish ? 'View less' : 'Ver menos';
+
     btn.addEventListener('click', () => {
         const isOpening = !hiddenDeals[0].classList.contains('show');
 
@@ -30,7 +35,7 @@ function initDealsToggle() {
             }
         });
 
-        btn.textContent = isOpening ? 'Ver menos' : 'Ver todos os negócios';
+        btn.textContent = isOpening ? textHide : textShow;
 
         if (!isOpening) {
             document.getElementById('negocios').scrollIntoView({ behavior: 'smooth' });

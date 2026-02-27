@@ -228,8 +228,38 @@ a {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 32px;
     list-style: none;
+}
+
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    border-left: 1px solid var(--border-color);
+    padding-left: 20px;
+    margin-left: -8px;
+}
+
+.lang-switcher a {
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.lang-switcher a:hover {
+    color: var(--gold-light);
+}
+
+.lang-switcher a.active-lang {
+    color: var(--gold-primary);
+}
+
+.lang-switcher span {
+    opacity: 0.3;
 }
 
 .nav-links a {
