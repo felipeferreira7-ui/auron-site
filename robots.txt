@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /en/
+
+# Sitemap Link
 Sitemap: https://auronnegocios.com.br/sitemap.xml
+
+# Crawl-delay for aggressive bots
+Crawl-delay: 10
