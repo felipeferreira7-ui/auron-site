@@ -7,7 +7,37 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initSmoothScroll();
     initScrollReveal();
+    initDealsToggle();
 });
+
+// --- Deals Page Expansion ---
+function initDealsToggle() {
+    const btn = document.getElementById('toggle-deals');
+    const hiddenDeals = document.querySelectorAll('.hidden-deal');
+
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+        const isHidden = hiddenDeals[0].style.display !== 'block';
+
+        hiddenDeals.forEach(deal => {
+            deal.style.display = isHidden ? 'block' : 'none';
+            // Re-trigger reveal if shown
+            if (isHidden) {
+                setTimeout(() => {
+                    deal.classList.add('revealed');
+                }, 10);
+            }
+        });
+
+        btn.textContent = isHidden ? 'Ver menos' : 'Ver todos os negócios';
+
+        // If closing, scroll back to head of section
+        if (!isHidden) {
+            document.getElementById('negocios').scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+}
 
 // --- Navbar Scroll Effect ---
 function initNavbar() {
@@ -16,7 +46,7 @@ function initNavbar() {
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-        
+
         if (currentScroll > 60) {
             navbar.classList.add('scrolled');
         } else {
