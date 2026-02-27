@@ -15,25 +15,24 @@ function initDealsToggle() {
     const btn = document.getElementById('toggle-deals');
     const hiddenDeals = document.querySelectorAll('.hidden-deal');
 
-    if (!btn) return;
+    if (!btn || hiddenDeals.length === 0) return;
 
     btn.addEventListener('click', () => {
-        const isHidden = hiddenDeals[0].style.display !== 'block';
+        const isOpening = !hiddenDeals[0].classList.contains('show');
 
         hiddenDeals.forEach(deal => {
-            deal.style.display = isHidden ? 'block' : 'none';
-            // Re-trigger reveal if shown
-            if (isHidden) {
+            deal.classList.toggle('show');
+            if (isOpening) {
+                // Small delay to trigger reveal animation properly
                 setTimeout(() => {
                     deal.classList.add('revealed');
                 }, 10);
             }
         });
 
-        btn.textContent = isHidden ? 'Ver menos' : 'Ver todos os negócios';
+        btn.textContent = isOpening ? 'Ver menos' : 'Ver todos os negócios';
 
-        // If closing, scroll back to head of section
-        if (!isHidden) {
+        if (!isOpening) {
             document.getElementById('negocios').scrollIntoView({ behavior: 'smooth' });
         }
     });
