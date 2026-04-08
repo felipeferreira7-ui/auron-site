@@ -3,8 +3,9 @@ Allow: /
 Allow: /assets/
 Allow: /en/
 
-# Sitemap Link
-Sitemap: https://auronnegocios.com.br/sitemap.xml
+# Bloquear pastas internas que não são páginas públicas
+Disallow: /05_RESEARCH_LAB/
+Disallow: /03_INTELIGENCIA/
 
-# Crawl-delay for aggressive bots
-Crawl-delay: 10
+# Sitemap
+Sitemap: https://auronnegocios.com.br/sitemap.xml
