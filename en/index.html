@@ -32,7 +32,10 @@
     <meta property="og:url" content="https://auronnegocios.com.br/en/">
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="Auron Negócios">
-    <meta property="og:image" content="https://auronnegocios.com.br/assets/Auron_Logo.png">
+    <meta property="og:image" content="https://auronnegocios.com.br/assets/auron_og.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:image:alt" content="Auron Negócios — The boutique that turns assets into strategy.">
 
     <!-- Twitter/X Card -->
     <meta name="twitter:card" content="summary">
@@ -85,8 +88,9 @@
             "areaServed": "Worldwide",
             "availableLanguage": ["Portuguese", "English"]
         },
+        "slogan": "The boutique that turns assets into strategy.",
         "sameAs": [
-            "https://www.linkedin.com/company/auronnegocios"
+            "https://auronnegocios.com.br"
         ]
     },
     {
@@ -129,6 +133,76 @@
     },
     {
         "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Auron Negócios",
+        "url": "https://auronnegocios.com.br/en/",
+        "description": "The boutique that turns assets into strategy. M&A advisory for buying, selling and structuring businesses in Brazil.",
+        "inLanguage": "en"
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I sell my company in Brazil?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Selling a company in Brazil involves 4 key steps: 1) Valuation to determine your company's market value; 2) Preparation of a confidential Information Memorandum; 3) Identification and approach of qualified buyers; 4) Negotiation and closing with legal documentation. Auron manages the entire process confidentially, protecting your brand and reputation throughout."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much is my Brazilian company worth?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Brazilian mid-market companies are typically valued between 3x to 8x their annual EBITDA, depending on the sector, revenue growth and quality of management. Auron provides a no-commitment market analysis for companies with annual revenue above R$ 10 million (approx. USD 2M)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do I find a Private Equity buyer for my company?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To attract institutional investors (PE funds, Family Offices), you need a structured, confidential teaser and a professional M&A process. Auron has direct relationships with active buyers in Brazil, particularly in industrial, healthcare, and SaaS sectors."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I sell my Brazilian company without competitors finding out?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The M&A process is fully confidential. Potential buyers sign a Non-Disclosure Agreement (NDA) before receiving any company details. Your company's identity is only revealed after your approval at each stage of the process."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is EBITDA and why does it matter for my company's valuation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "EBITDA (Earnings Before Interest, Taxes, Depreciation and Amortization) represents the operating cash generation of a business. In Brazil, mid-market companies typically sell at 3x to 10x their annual EBITDA. For example, a solid industrial company with R$ 5M EBITDA may be valued between R$ 15M and R$ 50M depending on sector and growth. Auron calculates this technically and presents the result in the most favorable way for the seller."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is succession planning and why does it matter?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Business succession planning is the process of organizing the transfer of ownership and control of a company or family assets to the next generation — minimizing conflicts, tax liabilities and operational risk. Auron works alongside legal specialists to help founders preserve and transfer their legacy effectively."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does it take to sell a company in Brazil?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "On average, a full company sale process takes between 6 and 18 months, depending on size, sector and complexity. Well-organized companies can be sold in 4 to 6 months. Auron works to optimize each stage without sacrificing maximum value for the seller."
+                }
+            }
+        ]
+    },
+    {
+        "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [{
             "@type": "ListItem",
@@ -138,13 +212,23 @@
         }, {
             "@type": "ListItem",
             "position": 2,
-            "name": "About",
+            "name": "About Us",
             "item": "https://auronnegocios.com.br/en/#sobre"
         }, {
             "@type": "ListItem",
             "position": 3,
-            "name": "Deals",
+            "name": "Featured Deals",
             "item": "https://auronnegocios.com.br/en/#negocios"
+        }, {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "FAQ",
+            "item": "https://auronnegocios.com.br/en/#faq"
+        }, {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Insights",
+            "item": "https://auronnegocios.com.br/en/insights/"
         }]
     }
     ]
@@ -171,9 +255,10 @@
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#sobre">About Us</a></li>
-                <li><a href="#atuacao">expertise</a></li>
+                <li><a href="#atuacao">Expertise</a></li>
                 <li><a href="#negocios">Deals</a></li>
-                <li><a href="#processo">Process</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="insights/">Insights</a></li>
                 <li class="lang-switcher">
                     <a href="../index.html">PT</a>
                     <span>|</span>
@@ -193,15 +278,15 @@
     <section class="hero" id="hero">
         <div class="hero-bg-overlay"></div>
         <div class="hero-content">
-            <div class="hero-badge reveal">M&A Advisory & Asset Structuring</div>
+            <div class="hero-badge reveal">M&amp;A Advisory &middot; Incorporation &middot; Asset Structuring</div>
             <h1 class="hero-title reveal">
-                Connecting investors<br>
-                <span class="gold-text">to real business.</span>
+                Buying, selling &amp; structuring<br>
+                <span class="gold-text">businesses and assets.</span>
             </h1>
             <p class="hero-subtitle reveal">
-                Looking to <strong>buy</strong> a company? Want to <strong>sell</strong> your business?
-                Auron advises both sides of the transaction with technical analysis, fair valuation,
-                and absolute confidentiality.
+                <em>The boutique that turns assets into strategy.</em><br>
+                We advise <strong>business owners, investors and business families</strong> with technical
+                valuation, absolute confidentiality and full structuring &mdash; from first contact to closing.
             </p>
             <div class="hero-actions reveal">
                 <a href="#negocios" class="btn btn-primary">View Available Deals</a>
