@@ -199,7 +199,49 @@
             max-width: 800px;
             position: relative;
         }
+
+        .horizontal-scroll-gallery {
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+            padding: 20px 0 40px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .horizontal-scroll-gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .horizontal-scroll-gallery::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
+        .horizontal-scroll-gallery::-webkit-scrollbar-thumb {
+            background: var(--gold-primary);
+            border-radius: 4px;
+        }
+        
+        .scroll-track {
+            display: inline-flex;
+            gap: 20px;
+            padding: 0 40px;
+        }
+        
+        .scroll-track img {
+            height: 400px;
+            width: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+        
+        .scroll-track img:hover {
+            transform: scale(1.02);
+        }
     </style>
+
 
 </head>
 
@@ -305,7 +347,39 @@
         </div>
     </section>
 
+
+    <!-- Grande Galeria Horizontal -->
+    <section style="background: var(--bg-primary); padding: 40px 0 80px; border-top: 1px solid var(--border-color);">
+        <div class="container reveal">
+            <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                <h2 class="section-title">Conheça o <span class="gold-text">Projeto</span></h2>
+                <p class="section-subtitle" style="margin: 20px auto 0;">Deslize para ver todos os detalhes incríveis e as diversas opções de convivência, lazer e negócios.</p>
+            </div>
+        </div>
+        
+        <div class="horizontal-scroll-gallery reveal">
+            <div class="scroll-track">
+                <img src="../assets/alphaville/galeria-1.jpg" alt="Aérea Clube TA 1" loading="lazy">
+                <img src="../assets/alphaville/galeria-2.jpg" alt="Aérea Clube TA 2" loading="lazy">
+                <img src="../assets/alphaville/galeria-3.jpg" alt="Piscina Clube TA 2" loading="lazy">
+                <img src="../assets/alphaville/galeria-4.jpg" alt="Salão de Festas TA 1" loading="lazy">
+                <img src="../assets/alphaville/galeria-5.jpg" alt="Churrasqueira" loading="lazy">
+                <img src="../assets/alphaville/galeria-6.jpg" alt="Aérea Praça com Quadra" loading="lazy">
+                <img src="../assets/alphaville/galeria-7.jpg" alt="Praça Pequenos" loading="lazy">
+                <img src="../assets/alphaville/galeria-8.jpg" alt="Praça Peludos" loading="lazy">
+                <img src="../assets/alphaville/galeria-9.jpg" alt="Caminho Pomar" loading="lazy">
+                <img src="../assets/alphaville/galeria-10.jpg" alt="Fachada Comercial" loading="lazy">
+                <img src="../assets/alphaville/galeria-11.jpg" alt="Comercial Pracinha" loading="lazy">
+                <img src="../assets/alphaville/galeria-12.jpg" alt="Praça de Eventos" loading="lazy">
+                <img src="../assets/alphaville/galeria-13.jpg" alt="Praça Piquenique" loading="lazy">
+                <img src="../assets/alphaville/galeria-14.jpg" alt="Praça Ginástica" loading="lazy">
+                <img src="../assets/alphaville/galeria-15.jpg" alt="Fotomontagem Geral" loading="lazy">
+            </div>
+        </div>
+    </section>
+
     <!-- Pagamento Section -->
+
     <section class="urgency-section">
         <div class="container" style="position: relative; z-index: 2;">
             <h2 class="section-title reveal" style="margin-bottom: 15px;">Condições de <span class="gold-text">Pré-Tabela</span></h2>
