@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Alphaville Votorantim | Breve Lançamento - Auron Negócios</title>
+    <meta name="description"
+        content="Antecipe-se ao mercado! Parque Alphaville Alvorada em Votorantim. Lotes residenciais e comerciais em bairro planejado. Garanta condições exclusivas de pré-lançamento.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    
+    <style>
+        /* CSS Específico da LP (Override sutil para máxima conversão) */
+        .hero-alphaville {
+            background-image: linear-gradient(to bottom, rgba(8,8,12,0.8), rgba(8,8,12,0.95)), url('../assets/alphaville/hero.png');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.05) translateY(-5px);
+            background-color: #1ebe57;
+            color: #fff;
+        }
+        
+        .trigger-badge {
+            display: inline-block;
+            background: rgba(201, 168, 76, 0.15);
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-light);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            animation: pulse-border 2s infinite;
+        }
+        
+        @keyframes pulse-border {
+            0% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(201, 168, 76, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(201, 168, 76, 0); }
+        }
+
+        .sales-benefits {
+            background: var(--bg-secondary);
+            padding: 80px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .benefit-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .benefit-card:hover {
+            border-color: var(--gold-primary);
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .urgency-section {
+            text-align: center;
+            padding: 100px 0;
+            background: var(--bg-primary);
+            position: relative;
+        }
+
+        .urgency-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at center, rgba(201, 168, 76, 0.05) 0%, transparent 70%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Minimalista -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container" style="justify-content: center;">
+            <a href="https://auronnegocios.com.br" class="nav-logo">
+                <img src="../assets/Auron_Logo.png" alt="Auron Negócios" class="logo-img" style="height: 60px;">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section Vendedora -->
+    <section class="hero hero-alphaville">
+        <div class="hero-content">
+            <div class="trigger-badge">⚠️ Breve Lançamento Exclusivo</div>
+            <h1 class="hero-title reveal" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">
+                O novo padrão de viver bem em <span class="gold-text">Votorantim.</span>
+            </h1>
+            <p class="hero-subtitle reveal" style="font-size: 1.25rem; color: #fff; max-width: 650px;">
+                Chegou a hora de investir na grife urbana mais desejada do Brasil. 
+                Lotes residenciais e comerciais no <strong>Parque Alphaville (Alvorada)</strong>.
+                <br><br>
+                <span style="color: var(--gold-light);">Lotes limitados. Condições de pré-tabela garantidas apenas para quem se antecipar.</span>
+            </p>
+            <div class="hero-actions reveal" style="margin-top: 40px;">
+                <a href="https://wa.me/5515997737252?text=Olá Expedito, vi a página do Parque Alphaville e quero ter acesso exclusivo antes do lançamento oficial!" target="_blank" class="btn btn-primary btn-lg" style="box-shadow: 0 0 20px rgba(201, 168, 76, 0.5);">
+                    Falar com Especialista Agora
+                </a>
+            </div>
+            <p class="reveal" style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 20px;">
+
+            </p>
+        </div>
+    </section>
+
+    <!-- Gatilhos Mentais e Benefícios -->
+    <section class="sales-benefits">
+        <div class="container">
+            <div class="section-header reveal" style="text-align: center; margin-bottom: 50px;">
+                <h2 class="section-title">Por que investir no <span class="gold-text">Alphaville Alvorada?</span></h2>
+                <p class="section-subtitle" style="margin: 20px auto 0;">Não é apenas a compra de um lote, é a reserva do seu patrimônio na região de maior valorização do interior paulista.</p>
+            </div>
+
+            <div class="areas-grid" style="grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="benefit-card reveal">
+                    <span class="benefit-icon">📍</span>
+                    <h3 class="area-title" style="margin-bottom: 15px;">Localização Premium</h3>
+                    <p class="area-description" style="margin-bottom: 0;">Votorantim (Bairro Itapeva). Fronteira estratégica com a Zona Sul de Sorocaba e fácil acesso ao Campolim.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <span class="benefit-icon">🌳</span>
+                    <h3 class="area-title" style="margin-bottom: 15px;">Parque Linear Exclusivo</h3>
+                    <p class="area-description" style="margin-bottom: 0;">Um bairro totalmente planejado com muito verde, áreas de lazer completas e clube exclusivo com assinatura Alphaville.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <span class="benefit-icon">📈</span>
+                    <h3 class="area-title" style="margin-bottom: 15px;">Valorização Certa</h3>
+                    <p class="area-description" style="margin-bottom: 0;">Comprar no dia do lançamento (tabela zero) historicamente garante a maior taxa de retorno sobre o investimento imobiliário.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVA: Ficha Técnica -->
+    <section style="background: var(--bg-primary); padding: 80px 0;">
+        <div class="container reveal">
+            <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                <h2 class="section-title">Ficha <span class="gold-text">Técnica</span></h2>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 30px; text-align: center; flex: 1; min-width: 250px;">
+                    <div style="font-size: 2rem; color: var(--gold-primary); font-weight: bold; margin-bottom: 10px;">300m² a 500m²</div>
+                    <div style="color: var(--text-secondary); font-size: 0.9rem;">Metragem dos Lotes</div>
+                </div>
+                <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 30px; text-align: center; flex: 1; min-width: 250px;">
+                    <div style="font-size: 2rem; color: var(--gold-primary); font-weight: bold; margin-bottom: 10px;">Segurança 24h</div>
+                    <div style="color: var(--text-secondary); font-size: 0.9rem;">Portaria Blindada Alphaville</div>
+                </div>
+                <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 10px; padding: 30px; text-align: center; flex: 1; min-width: 250px;">
+                    <div style="font-size: 2rem; color: var(--gold-primary); font-weight: bold; margin-bottom: 10px;">Clube Completo</div>
+                    <div style="color: var(--text-secondary); font-size: 0.9rem;">Piscina, Academia, Quadras</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Urgency Section -->
+    <section class="urgency-section">
+        <div class="container" style="position: relative; z-index: 2;">
+            <h2 class="section-title reveal" style="margin-bottom: 25px;">A procura já está <span class="gold-text">muito alta.</span></h2>
+            <p class="section-subtitle reveal" style="margin: 0 auto 40px; font-size: 1.15rem; max-width: 600px; color: #fff;">
+                Projetos com a marca Alphaville na região costumam esgotar rapidamente nas primeiras horas de abertura de vendas. <strong>Não fique de fora do cadastro reserva.</strong>
+            </p>
+            <a href="https://wa.me/5515997737252?text=Olá Expedito, quero garantir minha posição e receber o material exclusivo do Parque Alphaville." target="_blank" class="btn btn-primary btn-lg reveal">
+                Garantir Meu Acesso Antecipado
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Simples -->
+    <footer style="text-align: center; padding: 30px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-muted);">
+        <p>Auron Negócios Imobiliários © 2026. Todos os direitos reservados.</p>
+        <p style="margin-top: 5px;">LP Desenvolvida exclusivamente para capitação de pré-lançamento.</p>
+    </footer>
+
+    <!-- WhatsApp Flutuante Fixo (Botão Direto sem Form) -->
+    <a href="https://wa.me/5515997737252?text=Olá Expedito! Vim pelo site da Auron e quero saber tudo sobre o breve lançamento do Parque Alphaville." target="_blank" class="whatsapp-float" aria-label="Falar com corretor no WhatsApp">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.614-.087-.112-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 3.825 0 6.938 3.112 6.939 6.937.001 3.826-3.113 6.938-6.939 6.943z"/>
+        </svg>
+        Falar com Expedito
+    </a>
+
+    <!-- Reveal Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                const elementVisible = 50;
+                
+                reveals.forEach(reveal => {
+                    const elementTop = reveal.getBoundingClientRect().top;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveal.classList.add('revealed');
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Trigger immediately
+        });
+    </script>
+</body>
+</html>
