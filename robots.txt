@@ -2,6 +2,7 @@ User-agent: *
 Allow: /
 Allow: /assets/
 Allow: /en/
+Allow: /alphaville/
 
 # Bloquear pastas internas que não são páginas públicas
 Disallow: /05_RESEARCH_LAB/
