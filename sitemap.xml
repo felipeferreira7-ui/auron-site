@@ -7,9 +7,17 @@
         <loc>https://auronnegocios.com.br/</loc>
         <xhtml:link rel="alternate" hreflang="pt-br" href="https://auronnegocios.com.br/"/>
         <xhtml:link rel="alternate" hreflang="en"    href="https://auronnegocios.com.br/en/"/>
-        <lastmod>2026-04-08</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+
+    <!-- Landing Page: Parque Alphaville Alvorada - Votorantim -->
+    <url>
+        <loc>https://auronnegocios.com.br/alphaville</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.95</priority>
     </url>
 
     <!-- Página Internacional (EN) -->
