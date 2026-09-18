@@ -1,31 +1,23 @@
-# Auron Negócios — Site Institucional
+# Auron Negócios — site institucional
 
-Site institucional da **Auron Negócios** — boutique de M&A e estruturação de ativos.
+Site institucional publicado em [auronnegocios.com.br](https://auronnegocios.com.br).
 
-🔗 **[auronnegocios.com.br](https://www.auronnegocios.com.br)**
+Leia o [Manual de operação do site](MANUAL_OPERACAO.md) antes de alterar conteúdo, formulário, SEO ou publicação.
 
-## Stack
+## Estrutura principal
 
-- HTML5 + CSS3 + JavaScript (vanilla)
-- Design: Dark mode premium + gold accents
-- Fontes: Inter + Playfair Display (Google Fonts)
-- Hospedagem: GitHub Pages
+- `index.html`: home e triagem inicial.
+- `style.css` e `script.js`: identidade visual e interações.
+- `insights/`: conteúdos editoriais.
+- `compradores/`: página de captação de teses de aquisição.
+- `servicos/`: páginas institucionais de serviços.
+- `assets/`: logo e imagens otimizadas do site.
+- `sitemap.xml`, `robots.txt` e `llms.txt`: descoberta por buscadores e sistemas de IA.
 
-## Estrutura
-
-```
-├── index.html          # Página principal
-├── style.css           # Design system completo
-├── script.js           # Interações e animações
-├── assets/             # Logo e imagens
-├── CNAME               # Domínio customizado
-└── package.json        # Scripts auxiliares
-```
-
-## Desenvolvimento Local
+## Desenvolvimento local
 
 ```bash
 python3 -m http.server 3456
 ```
 
-Acesse: `http://localhost:3456`
+Acesse `http://localhost:3456`.
