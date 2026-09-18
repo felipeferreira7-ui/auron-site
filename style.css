@@ -181,12 +181,15 @@ a {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 24px 0;
+    padding: 14px 0;
+    background: rgba(8, 8, 12, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     transition: var(--transition);
 }
 
 .navbar.scrolled {
-    padding: 14px 0;
+    padding: 10px 0;
     background: rgba(8, 8, 12, 0.92);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -208,13 +211,13 @@ a {
 }
 
 .logo-img {
-    height: 120px;
+    height: 56px;
     width: auto;
     transition: var(--transition);
 }
 
 .navbar.scrolled .logo-img {
-    height: 64px;
+    height: 48px;
 }
 
 .logo-text {
@@ -345,6 +348,7 @@ a {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 112px 0 72px;
 }
 
 .hero-bg-overlay {
@@ -374,6 +378,7 @@ a {
     text-align: center;
     padding: 0 24px;
     max-width: 800px;
+    width: 100%;
 }
 
 .hero-badge {
@@ -454,8 +459,6 @@ a {
 .section {
     padding: var(--section-padding);
     position: relative;
-    content-visibility: auto;
-    contain-intrinsic-size: 500px;
 }
 
 .section-header {
@@ -876,6 +879,7 @@ a {
     color: var(--text-primary);
     text-align: right;
     font-weight: 500;
+    overflow-wrap: anywhere;
 }
 
 .deal-status {
@@ -912,6 +916,100 @@ a {
     font-size: 1rem;
     color: var(--text-secondary);
     margin-bottom: 24px;
+}
+
+/* --- Confidential Intake --- */
+.intake {
+    background: var(--bg-primary);
+}
+
+.intake-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.intake-intro p {
+    color: var(--text-secondary);
+    max-width: 440px;
+    margin-top: 24px;
+}
+
+.intake-note {
+    border-left: 1px solid var(--gold-primary);
+    padding-left: 16px;
+    font-size: 0.9rem;
+}
+
+.intake-form {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 36px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.form-field label {
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    color: var(--text-primary);
+    background: rgba(8, 8, 12, 0.7);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 13px 14px;
+    font: inherit;
+    line-height: 1.35;
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.form-field select:invalid,
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1);
+}
+
+.form-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.intake-form .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.form-disclaimer {
+    color: var(--text-muted);
+    font-size: 0.76rem;
+    line-height: 1.5;
+    margin-top: 14px;
+    text-align: center;
 }
 
 /* --- CTA Section (Dual) --- */
@@ -1088,6 +1186,11 @@ a {
 
     .cta-dual-grid {
         grid-template-columns: 1fr;
+    }
+
+    .intake-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
 }
 
@@ -1352,6 +1455,15 @@ a {
 
 /* --- Responsive Media Query Base (768px) --- */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .logo-img,
+    .navbar.scrolled .logo-img {
+        height: 46px;
+    }
+
     .nav-toggle {
         display: flex;
     }
@@ -1385,6 +1497,19 @@ a {
 
     .hero-title {
         font-size: clamp(2rem, 7vw, 3rem);
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 132px 0 88px;
+    }
+
+    .hero-badge {
+        max-width: 100%;
+        font-size: 0.64rem;
+        letter-spacing: 0.06em;
+        line-height: 1.5;
+        margin-bottom: 24px;
     }
 
     .hero-subtitle {
@@ -1425,6 +1550,15 @@ a {
         width: 100%;
         justify-content: center;
     }
+
+    .intake-form {
+        padding: 28px 20px;
+    }
+
+    .form-split {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1454,5 +1588,149 @@ a {
 
     .deal-detail-value {
         text-align: left;
+    }
+}
+
+/* --- 2026 editorial refinement --- */
+@media (min-width: 969px) {
+    :root {
+        --container-max: 1280px;
+        --section-padding: 144px 0;
+    }
+
+    .hero-content {
+        max-width: 1080px;
+    }
+
+    .hero-title {
+        font-size: clamp(3.8rem, 6.2vw, 6.3rem);
+        letter-spacing: -0.045em;
+    }
+
+    .hero-subtitle {
+        font-size: 1.16rem;
+        max-width: 610px;
+    }
+
+    .areas-grid.areas-grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: var(--border-color);
+        border: 1px solid var(--border-color);
+    }
+
+    .area-card {
+        border: 0;
+        border-radius: 0;
+        min-height: 420px;
+        padding: 42px 32px 34px;
+    }
+
+    .deals-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border-color);
+        border: 1px solid var(--border-color);
+    }
+
+    .deal-card {
+        border: 0;
+        border-radius: 0;
+        padding: 38px 32px;
+    }
+}
+
+.hero {
+    background-image: linear-gradient(rgba(201, 168, 76, 0.075) 1px, transparent 1px), linear-gradient(90deg, rgba(201, 168, 76, 0.075) 1px, transparent 1px);
+    background-size: 88px 88px;
+}
+
+.hero::after {
+    content: 'AURON';
+    position: absolute;
+    bottom: -0.2em;
+    right: -0.04em;
+    color: rgba(201, 168, 76, 0.035);
+    font-family: var(--font-serif);
+    font-size: clamp(8rem, 22vw, 23rem);
+    line-height: 0.75;
+    pointer-events: none;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.section-header {
+    max-width: 720px;
+}
+
+.section-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+}
+
+.section-title {
+    letter-spacing: -0.035em;
+}
+
+.about-text {
+    max-width: 680px;
+}
+
+.about-stats {
+    align-self: stretch;
+}
+
+.stat-card,
+.cta-card,
+.intake-form {
+    border-radius: 2px;
+}
+
+.stat-card {
+    padding: 30px 28px;
+}
+
+.stat-number {
+    letter-spacing: -0.05em;
+}
+
+.area-card:hover,
+.deal-card:hover {
+    transform: none;
+}
+
+.area-card:hover {
+    background: #17161a;
+}
+
+.deal-badge {
+    border-radius: 0;
+}
+
+.deal-title {
+    font-size: 1.35rem;
+}
+
+.intake {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: 48px 48px;
+    }
+
+    .hero::after {
+        font-size: 9rem;
+    }
+
+    .area-card,
+    .deal-card,
+    .cta-card,
+    .intake-form {
+        border-radius: 2px;
     }
 }

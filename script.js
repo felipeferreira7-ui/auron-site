@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initScrollReveal();
     initDealsToggle();
+    initConfidentialIntake();
 });
 
 // --- Deals Page Expansion ---
@@ -40,6 +41,31 @@ function initDealsToggle() {
         if (!isOpening) {
             document.getElementById('negocios').scrollIntoView({ behavior: 'smooth' });
         }
+    });
+}
+
+// --- Confidential intake ---
+function initConfidentialIntake() {
+    const form = document.getElementById('intakeForm');
+    if (!form) return;
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+
+        const data = new FormData(form);
+        const message = [
+            'Olá, Auron. Gostaria de iniciar uma conversa confidencial.',
+            '',
+            `Nome: ${data.get('name')}`,
+            `Objetivo: ${data.get('role')}`,
+            `Setor: ${data.get('sector')}`,
+            `Cidade/UF: ${data.get('city')}`,
+            `Porte: ${data.get('size')}`,
+            `Contexto: ${data.get('message')}`
+        ].join('\n');
+
+        window.open(`https://wa.me/5511947684604?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
     });
 }
 

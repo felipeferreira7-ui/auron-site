@@ -8,5 +8,6 @@ Disallow: /alphaville/
 Disallow: /05_RESEARCH_LAB/
 Disallow: /03_INTELIGENCIA/
 
-# Sitemap
+# Sitemap & LLMs
 Sitemap: https://auronnegocios.com.br/sitemap.xml
+Allow: /llms.txt
