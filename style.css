@@ -1012,6 +1012,21 @@ a {
     text-align: center;
 }
 
+.form-alternate-link {
+    display: block;
+    margin-top: 16px;
+    color: var(--gold-light);
+    font-size: 0.82rem;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.form-alternate-link:hover {
+    color: var(--gold-primary);
+}
+
 /* --- CTA Section (Dual) --- */
 .cta-section {
     padding: 100px 0 120px;
